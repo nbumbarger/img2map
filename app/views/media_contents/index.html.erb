@@ -9,9 +9,10 @@
 <% end %>
 </div>
 
-<%= form_tag '/media_contents', method: :post, class: "dropzone", id: "media-dropzone" %>
+<%= form_tag '/media_contents', method: :post, class: "dropzone", id: "media-dropzone" do %>
   <%= text_field_tag :lat %>
   <%= text_field_tag :lng %>
-<div class="fallback">
-  <%= file_field_tag "media", multiple: true%>
-</div>
+  <div class="fallback">
+    <%= file_field_tag "media", multiple: true%>
+  </div>
+<% end %>

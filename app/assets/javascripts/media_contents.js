@@ -1,8 +1,22 @@
 $(function() {
   var mediaDropzone;
-  mediaDropzone = new Dropzone("#media-dropzone");
+    mediaDropzone = new Dropzone("#media-dropzone");
+    mediaDropzone.on("addedfile", function(file) {
+      getCoords(file, function(coords) {
+      $('#lat').val(coords.lat);
+      $('#lng').val(coords.lng)
+      alert("added to hidden field: "+coords.lat+" "+coords.lng )
+      })
+  });
+
+  mediaDropzone.on("sending", function(file, xhr, formData) {
+      getCoords(file, function(coords) {
+        alert("attempting to append to formData: "+coords.lat+" "+coords.lng )
+        formData.append("coords", coords);
+      })
+  });
+
   mediaDropzone.on("success", function(file, responseText) {
-    getCoords(responseText.file_name.url) 
     appendImage(responseText.file_name.url, responseText.id);
     setTimeout(function(){
       $(file.previewElement).fadeOut(2000)
@@ -17,29 +31,14 @@ function exifCoordToDec(exifCoord) {
   return degreeDec + minuteDec + secondDec
 };
 
-function getCoords(imageUrl) {
-  var http = new XMLHttpRequest();
-  http.open("GET", imageUrl, true);
-  http.responseType = "blob";
-  http.onload = function(e) {
-    if (this.status === 200) {
-      var image = new Image();
-      image.onload = function() {
-        EXIF.getData(image, function() {
-          var lng = EXIF.getTag(this, 'GPSLongitude');
-          var lat = EXIF.getTag(this, 'GPSLatitude');
-          var lngDec = exifCoordToDec(lng)
-          var latDec = exifCoordToDec(lat)
-          console.log(lngDec)
-          console.log(latDec)
-          $('#lat').val(latDec);
-          $('#lng').val(lngDec)
-        });
-      };
-      image.src = URL.createObjectURL(http.response);
-    }
-  };
-  http.send();
+function getCoords(image, callback) {
+  EXIF.getData(image, function() {
+    var lng = EXIF.getTag(this, 'GPSLongitude');
+    var lat = EXIF.getTag(this, 'GPSLatitude');
+    var lngDec = exifCoordToDec(lng)
+    var latDec = exifCoordToDec(lat)
+    callback({lat:latDec, lng:lngDec})
+  });
 };
 
 var appendImage = function(imageUrl, mediaId) {
@@ -47,3 +46,29 @@ var appendImage = function(imageUrl, mediaId) {
     '<input id="media_contents_" name="media_contents[]" value="' + mediaId +'" type="checkbox">'
   $(imageMarkup).hide().appendTo("#media-contents").fadeIn(1500)
 };
+
+// getCoords (HTTP Request version). I may need this later.
+// function getCoords(imageUrl) {
+//   var http = new XMLHttpRequest();
+//   http.open("GET", imageUrl, true);
+//   http.responseType = "blob";
+//   http.onload = function(e) {
+//     if (this.status === 200) {
+//       var image = new Image();
+//       image.onload = function() {
+//         EXIF.getData(image, function() {
+//           var lng = EXIF.getTag(this, 'GPSLongitude');
+//           var lat = EXIF.getTag(this, 'GPSLatitude');
+//           var lngDec = exifCoordToDec(lng)
+//           var latDec = exifCoordToDec(lat)
+//           console.log(lngDec)
+//           console.log(latDec)
+//           $('#lat').val(latDec);
+//           $('#lng').val(lngDec)
+//         });
+//       };
+//       image.src = URL.createObjectURL(http.response);
+//     }
+//   };
+//   http.send();
+// };
