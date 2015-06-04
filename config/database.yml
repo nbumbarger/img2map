@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: imgtomap_development
+
+test:
+  <<: *default
+  database: imgtomap_test
+
+production:
+  <<: *default
+  database: imgtomap_production
+  username: imgtomap
+  password: <%= ENV['IMGTOMAP_DATABASE_PASSWORD'] %>
