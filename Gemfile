@@ -11,9 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'normalize-rails'
 gem 'rails_12factor', group: :production
-
 gem 'carrierwave'
-gem 'cloudinary', group: :production
 gem 'autoprefixer-rails'
 
 group :development do

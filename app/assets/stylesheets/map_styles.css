@@ -1,5 +1,4 @@
 /*-map view styles ------------------*/
-
 .map-container .leaflet-popup-content-wrapper {
   width: 380px;
   background: rgba(0, 0, 0, 0.65);

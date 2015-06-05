@@ -4,10 +4,11 @@ function initMain(mapboxToken, geoJSON) {
     var mediaDropzone;
     // Initialize upload dropzone
     mediaDropzone = new Dropzone("#media-dropzone");
-    // When file is dropped, extract coordinates from image and convert to DD
+    // When file is first dropped...
     mediaDropzone.on("addedfile", function(file) {
+      // ...extract coordinates from image and convert to decimal
       getCoords(file, function(coords) {
-      // Store converted lat/long in hidden fields
+      // ... Store converted lat/lng in hidden fields
       $('#lat').val(coords.lat);
       $('#lng').val(coords.lng)
       })
@@ -17,15 +18,16 @@ function initMain(mapboxToken, geoJSON) {
       // ...append image to image manager
       appendImage(responseText.file.url, responseText.id);
       setTimeout(function(){
-        // reload JSON into the map
+        // ...run the map refresh routine 
         loadFeatures();
-        // Remove upload status files
+        // ..fade out upload status/preview thumbnails
         $(file.previewElement).fadeOut(2000)
         }, 1000);
     });
   });
 
   // Convert a coordinate in degrees, minutes seconds format to decimal
+  // OOPS! Need to add conversion for hemisphere
   function exifCoordToDec(exifCoord) {
     var degreeDec = exifCoord[0].numerator
     var minuteDec = exifCoord[1].numerator / (60 * exifCoord[1].denominator)
@@ -33,7 +35,7 @@ function initMain(mapboxToken, geoJSON) {
     return degreeDec + minuteDec + secondDec
   };
 
-  // Get coordinates from the GPSLat and Long EXIF attributes of the image
+  // Get coordinates from the GPSLat and GPSLong EXIF attributes of the image
   function getCoords(image, callback) {
     EXIF.getData(image, function() {
       var lng = EXIF.getTag(this, 'GPSLongitude');
@@ -58,24 +60,26 @@ function initMain(mapboxToken, geoJSON) {
     .on('dblclick', function(e) {
       map.setView(e.latlng, map.getZoom() + 1)
     });
-  // Add empty feature layer to map frame
+  // Define feature layer
   var featureLayer = L.mapbox.featureLayer()
-    featureLayer.on('layeradd', function(e){
-      addPopups(e)
-    })
-    .addTo(map)
+  // Add HTML popups to each feature
+  featureLayer.on('layeradd', function(e){
+    addPopups(e)
+  })
+  // Add empty feature layer to map frame
+  .addTo(map)
 
-  // Load features from GeoJSON server
+  // Get latest GeoJSON
   function loadFeatures() {
     $.ajax({
       type: 'GET',
       dataType: 'json',
       url: geoJSON})
-    .done(function (geojson) { 
+    .done(function (geojson) {
       // Load response GeoJSON into feature layer
       featureLayer.setGeoJSON(geojson);
-      // Fit map to bounding coordinates of features
-      map.fitBounds(featureLayer.getBounds(), map.getZoom() - 10);
+      // Fit map to bounding coordinates of current features
+      map.fitBounds(featureLayer.getBounds());
     });
   };
 

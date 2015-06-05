@@ -83097,3 +83097,779 @@ Started GET "/" for 127.0.0.1 at 2015-06-05 05:47:08 -0400
 Processing by MediaContentsController#index as JSON
   [1m[35mMedia Load (1.2ms)[0m  SELECT "media".* FROM "media"
 Completed 200 OK in 20ms (Views: 4.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:24:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (57.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaContentsController#index as HTML
+  [1m[35m (34.1ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.9ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (100.1ms)
+Completed 200 OK in 1841ms (Views: 1715.0ms | ActiveRecord: 78.7ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+
+Started GET "/uploads/media/file/221/image3.jpg" for 127.0.0.1 at 2015-06-05 10:24:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/221/image3.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (119.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (381.2ms)
+
+
+Started GET "/uploads/media/file/222/image6.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/222/image6.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.1ms)
+
+
+Started GET "/uploads/media/file/223/image5.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/223/image5.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.9ms)
+
+
+Started GET "/uploads/media/file/224/image7.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/224/image7.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.9ms)
+
+
+Started GET "/uploads/media/file/225/image8.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/225/image8.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.2ms)
+
+
+Started GET "/uploads/media/file/226/image9.JPG" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/226/image9.JPG"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.1ms)
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+
+Started GET "/uploads/media/file/219/image1.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/219/image1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.1ms)
+
+
+Started GET "/uploads/media/file/227/image10.jpg" for 127.0.0.1 at 2015-06-05 10:24:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/227/image10.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.6ms)
+
+
+Started GET "/uploads/media/file/220/image2.jpg" for 127.0.0.1 at 2015-06-05 10:24:07 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/media/file/220/image2.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/nbumbarger/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.5ms)
+
+
+Started DELETE "/delete_media" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+Processing by MediaContentsController#delete_media as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "commit"=>"Delete Selected", "media_contents"=>["221", "222", "223", "224", "225", "226", "227", "219", "220"]}
+  [1m[35mMedia Load (12.6ms)[0m  SELECT "media".* FROM "media"  WHERE "media"."id" IN (221, 222, 223, 224, 225, 226, 227, 219, 220)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 221]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 222]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 223]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 224]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 225]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 226]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 227]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 219]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 220]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms (ActiveRecord: 23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:10 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:20 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:24:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 101ms (Views: 99.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:25:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:26:10 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:26:35 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1183ms (Views: 1181.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:26:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:26:48 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1185ms (Views: 1182.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:26:50 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:27:00 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1216ms (Views: 1213.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:01 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:27:02 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:27:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:27:24 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1201ms (Views: 1198.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:27:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:28:24 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1218ms (Views: 1216.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:28:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-05 10:28:40 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1217ms (Views: 1215.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/map_styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-05 10:28:41 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-06-05 10:28:42 -0400
+
+
+Started GET "/assets/cloud.png" for 127.0.0.1 at 2015-06-05 10:28:42 -0400

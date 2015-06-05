@@ -8,11 +8,12 @@ class MediaContentsController < ApplicationController
     end
   end
 
+  # Not surrently using this,
+  # but might want to serve geoJSON from something other than the base_url
   def json
-    
   end
 
- def create
+  def create
     @media = Media.new(file: params[:file], lat: params[:lat], lng: params[:lng])
     if @media.save!
       respond_to do |format|
@@ -21,6 +22,7 @@ class MediaContentsController < ApplicationController
     end
   end
 
+  # I would rather use an AJAX delete method
   def delete_media
     Media.where(id: params[:media_contents]).destroy_all
     redirect_to root_url
