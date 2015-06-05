@@ -42,9 +42,10 @@ function getCoords(image, callback) {
 
 var appendImage = function(imageUrl, mediaId) {
   var imageMarkup = '<img src="' + imageUrl + '"/>' +
-    '<input id="media_contents_" name="media_contents[]" value="' + mediaId +'" type="checkbox">'
-  $(imageMarkup).hide().appendTo("#media-contents").fadeIn(1500)
+    '<input id="media_contents_" name="media_contents[]" value="' + mediaId +'" type="checkbox" class="checkbox">'
+  $(imageMarkup).hide().appendTo(".saved-images").fadeIn(1500)
 };
+  
 
 // getCoords (HTTP Request version). I may need this later.
 // function getCoords(imageUrl) {

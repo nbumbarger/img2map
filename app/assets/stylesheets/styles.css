@@ -18,6 +18,13 @@ header, section, footer {
   overflow: auto;
 }
 
+.logo {
+  width:100%;
+  height:3rem;
+  background: url("logo.png") center/424px 75px no-repeat;
+
+}
+
 /*Map container styles*/
 .map-container {
   width: 98%;
@@ -29,7 +36,7 @@ header, section, footer {
 }
 
 .map-container #map {
-  height: 30rem;
+  height: 25rem;
   border-radius: 5px 5px 0 0;
 }
 
@@ -50,8 +57,8 @@ header, section, footer {
 .map-container .caption {
   width: 100%;
   padding: .5rem 0;
-  background: rgb(85, 85, 85);
-  color: rgb(64, 191, 242);
+  background: rgb(170, 232, 255);
+  color: rgb(0, 6, 73);
   border-radius: 0 0 5px 5px;
   text-align: center; 
 }
@@ -68,11 +75,37 @@ header, section, footer {
   margin: 0 1rem;
   padding: 0;
   background: url("cloud.png") center no-repeat;
-  border: 1px solid rgb( 150, 150, 150);
+  border: 2px solid rgb( 100, 100, 255);
   border-radius: 5px;
   box-shadow: 0 0 7px 2px rgb(160, 160, 160);
   text-align:center;
   box-shadow: inset 0 0 100px 1px rgba(0,0,0,0.5), 0 0 7px 2px rgb(160, 160, 160);
+}
+
+.saved-images{
+  float: left;
+  width: 98%;
+  margin:1rem;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 5px;
+  box-shadow: 0 0 7px 2px rgb(160, 160, 160);
+}
+
+.saved-images .caption {
+  width: 100%;
+  padding: .5rem 0;
+  background: rgb(170, 232, 255);
+  color: rgb(0, 6, 73);
+  border-bottom: 1px solid rgb(150, 150, 150);
+  border-radius: 5px 5px 0 0;
+  text-align: center; 
+}
+
+#media-contents img {
+  margin-left:1.25rem;
+  width: 75px;
+  height: 56.25px;
+  padding-bottom:1rem;
 }
 
 .dz-preview, .dz-file-preview {
@@ -89,8 +122,38 @@ header, section, footer {
 }
 
 
-#media-contents img {
-  width: 150px;
-  height: 112.5px;
+/*button styles*/
+
+
+
+.checkbox {
+  position:relative;
+  clear:left;
+  margin-bottom:.5rem;
+}
+input[type="submit"] {
+  width:97%;
+  margin:1rem;
+  padding: .75rem;
+  font-size: 1rem;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  color: rgb(85, 85, 85);
+  background: rgb(242, 242, 242);
+  text-align: center;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(216, 216, 216);
+  border-color: rgb(90, 90, 90);
 }
 
