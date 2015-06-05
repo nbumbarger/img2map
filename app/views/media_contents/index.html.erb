@@ -1,18 +1,34 @@
+<div class='mapview'>
+  <div id='map'>
+    <pre id='coordinates' class='ui-coordinates'></pre>
+  </div>
+    <div class='caption'>
+      <b>Required:</b> Drag <span class='icon-location'></span> to set location. Zoom to start location using <span class='icon-search'></span>
+    </div>
+  </div>
+
+<div class="controls">
 <div id="media-contents">
 <h1>Testing Area</h1>
 <%= form_tag '/delete_media', method: :delete do %>
   <%= submit_tag "Delete", id: "delete", disabled: @media_contents.empty? %>
     <% @media_contents.each do |media| %>
-      <%= image_tag media.file_name.url %>
+      <%= image_tag media.file.url %>
       <%= check_box_tag "media_contents[]", media.id %>
   <% end %>
 <% end %>
 </div>
 
 <%= form_tag '/media_contents', method: :post, class: "dropzone", id: "media-dropzone" do %>
-  <%= text_field_tag :lat %>
-  <%= text_field_tag :lng %>
+  <%= hidden_field_tag :lat %>
+  <%= hidden_field_tag :lng %>
   <div class="fallback">
     <%= file_field_tag "media", multiple: true%>
   </div>
 <% end %>
+
+</div>
+
+<script>
+  initMapView('<%= Rails.application.secrets.mapbox_token %>');
+</script>

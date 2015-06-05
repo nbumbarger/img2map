@@ -24544,3 +24544,3223 @@ Processing by MediaContentsController#create as JSON
   [1m[35mSQL (0.5ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-04 21:15:19.154666"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 21:15:19.154666"]]
   [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
 Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:30:50 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (19.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 902ms (Views: 875.9ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:30:51 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:30:59 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc1ccd0ae18 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-16933-m9cz1m>, @original_filename="image9.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image9.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:30:59.651586"], ["file_name", "image9.JPG"], ["updated_at", "2015-06-04 22:30:59.651586"]]
+  [1m[35m (328.2ms)[0m  COMMIT
+Completed 200 OK in 373ms (Views: 1.5ms | ActiveRecord: 330.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:34:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 514ms (Views: 475.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:04 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:34:07 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa472bf4e88 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-jcdw8u>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: media:
+  actionpack (4.1.5) lib/action_controller/metal/strong_parameters.rb:183:in `require'
+  app/controllers/media_contents_controller.rb:23:in `media_params'
+  app/controllers/media_contents_controller.rb:8:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:33 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:33 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 172ms (Views: 168.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:34:49 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:34:52 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa472c7e1b0 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-1pz6eiq>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: media:
+  actionpack (4.1.5) lib/action_controller/metal/strong_parameters.rb:183:in `require'
+  app/controllers/media_contents_controller.rb:23:in `media_params'
+  app/controllers/media_contents_controller.rb:8:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:35:46 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"39.14626388888889", "lng"=>"77.22335", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa471983718 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-1mod7vr>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: media:
+  actionpack (4.1.5) lib/action_controller/metal/strong_parameters.rb:183:in `require'
+  app/controllers/media_contents_controller.rb:23:in `media_params'
+  app/controllers/media_contents_controller.rb:8:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 149ms (Views: 146.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:22 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:36:58 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:37:00 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa474bc4f88 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-pqfgk7>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: media:
+  actionpack (4.1.5) lib/action_controller/metal/strong_parameters.rb:183:in `require'
+  app/controllers/media_contents_controller.rb:23:in `media_params'
+  app/controllers/media_contents_controller.rb:8:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:37:45 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 96ms (Views: 84.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:37:46 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:37:47 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa474f35910 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-10b5pcd>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:37:47.957834"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:37:47.957834"]]
+  [1m[35m (59.9ms)[0m  COMMIT
+Completed 200 OK in 259ms (Views: 1.5ms | ActiveRecord: 62.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.4ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:38:19 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:38:21 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa471e72710 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-9nhda9>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-04 22:38:22.013333"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:38:22.013333"]]
+  [1m[36m (9.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 28ms (Views: 1.0ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:39:07 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:08 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:39:17 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa472c043b0 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-ee6xgs>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:39:17.521890"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:39:17.521890"]]
+  [1m[35m (9.2ms)[0m  COMMIT
+Completed 200 OK in 30ms (Views: 1.4ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:39:32 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"39.14626388888889", "lng"=>"77.22335", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa474afcad8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-q4b4dc>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-04 22:39:32.993896"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:39:32.993896"]]
+  [1m[36m (110.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 130ms (Views: 1.0ms | ActiveRecord: 111.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:39:51 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 187ms (Views: 184.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:39:52 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:39:57 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa474f1f4a8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-16g9meb>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:39:57.058677"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:39:57.058677"]]
+  [1m[35m (7.8ms)[0m  COMMIT
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:40:09 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"39.14626388888889", "lng"=>"77.22335", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa472d2c7d8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-bd0e63>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-04 22:40:09.168861"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:40:09.168861"]]
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 72ms (Views: 3.2ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:40:30 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 102ms (Views: 99.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:40:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 204ms (Views: 202.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:41:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 102ms (Views: 92.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:42:03 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:42:08 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa474e55f90 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-1pxrlgw>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:42:08.595858"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:42:08.595858"]]
+  [1m[35m (75.2ms)[0m  COMMIT
+Completed 200 OK in 128ms (Views: 1.1ms | ActiveRecord: 75.8ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:42:24 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"39.14626388888889", "lng"=>"77.22335", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa4720a41a0 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-1ve6w5a>, @original_filename="with.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"with.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-04 22:42:24.278093"], ["file_name", "with.JPG"], ["updated_at", "2015-06-04 22:42:24.278093"]]
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 50ms (Views: 0.7ms | ActiveRecord: 31.3ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:42:41 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"39.14626388888889", "lng"=>"77.22335", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fa47206f590 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-31849-1qjs4f6>, @original_filename="image9.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image9.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:42:41.454110"], ["file_name", "image9.JPG"], ["updated_at", "2015-06-04 22:42:41.454110"]]
+  [1m[35m (29.8ms)[0m  COMMIT
+Completed 200 OK in 48ms (Views: 1.2ms | ActiveRecord: 31.6ms)
+
+
+Started DELETE "/delete_media" for 127.0.0.1 at 2015-06-04 18:45:59 -0400
+Processing by MediaContentsController#delete_media as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "commit"=>"Delete", "media_contents"=>["145", "146", "147", "148", "149", "150", "151", "152", "153", "154"]}
+  [1m[36mMedia Load (22.1ms)[0m  [1mSELECT "media".* FROM "media"  WHERE "media"."id" IN (145, 146, 147, 148, 149, 150, 151, 152, 153, 154)[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 145]]
+  [1m[35m (25.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 146]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 147]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 148]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 149]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 150]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 151]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 152]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 153]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 154]]
+  [1m[36m (13.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 69.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 237ms (Views: 234.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:46:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:54:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 2407ms (Views: 2343.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:54:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 18:55:32 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 1242ms (Views: 1239.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 18:55:33 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 18:55:57 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVUAcA/By7n4HvI5vU+RWipvfFWtWa0m1HSGk5R/EqQ=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f99a6821c10 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-32738-waf5q7>, @original_filename="image3.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image3.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-04 22:55:57.714301"], ["file_name", "image3.JPG"], ["updated_at", "2015-06-04 22:55:57.714301"]]
+  [1m[35m (12.6ms)[0m  COMMIT
+Completed 200 OK in 95ms (Views: 1.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 19:00:43 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.6ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 168ms (Views: 165.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 19:00:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:21:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 648ms (Views: 610.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:21:26 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 188ms (Views: 185.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:21:27 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:25:19 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01e80940 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-vv3x7f>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:25:19.549184"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:25:19.549184"]]
+  [1m[35m (56.0ms)[0m  COMMIT
+Completed 200 OK in 292ms (Views: 4.0ms | ActiveRecord: 60.9ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:25:39 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"39.141552777777775", "lng"=>"77.19354166666668", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac0187bdd8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-1k4xvo7>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-05 01:25:39.042918"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:25:39.042918"]]
+  [1m[36m (31.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 59ms (Views: 0.7ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:25:54 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 287ms (Views: 284.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:25:55 -0400
+  [1m[36mMedia Load (26.5ms)[0m  [1mSELECT  "media".* FROM "media"   ORDER BY "media"."id" DESC LIMIT 1[0m
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:28:36 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01a98ff8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-b6i582>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting '}'
+          description: placemark.description,
+                     ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:16: syntax error, unexpected tLABEL, expecting '='
+          image_url: media.file_name,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:17: syntax error, unexpected tLABEL, expecting '='
+          image_alt: placemark.image_alt,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:18: syntax error, unexpected tLABEL, expecting '='
+          link: placemark.link,
+               ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:19: syntax error, unexpected =>, expecting :: or '[' or '.'
+          :'marker-color' => '#f00'
+                            ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:20: syntax error, unexpected '}', expecting keyword_end
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:26: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/media.rb:15:in `'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:29:00 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"39.141552777777775", "lng"=>"77.19354166666668", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac05ca1300 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-10yyle2>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting '}'
+          description: placemark.description,
+                     ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:16: syntax error, unexpected tLABEL, expecting '='
+          image_url: media.file_name,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:17: syntax error, unexpected tLABEL, expecting '='
+          image_alt: placemark.image_alt,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:18: syntax error, unexpected tLABEL, expecting '='
+          link: placemark.link,
+               ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:19: syntax error, unexpected =>, expecting :: or '[' or '.'
+          :'marker-color' => '#f00'
+                            ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:20: syntax error, unexpected '}', expecting keyword_end
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:26: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/media.rb:15:in `'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:29:04 -0400
+Processing by MediaContentsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting '}'
+          description: placemark.description,
+                     ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:16: syntax error, unexpected tLABEL, expecting '='
+          image_url: media.file_name,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:17: syntax error, unexpected tLABEL, expecting '='
+          image_alt: placemark.image_alt,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:18: syntax error, unexpected tLABEL, expecting '='
+          link: placemark.link,
+               ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:19: syntax error, unexpected =>, expecting :: or '[' or '.'
+          :'marker-color' => '#f00'
+                            ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:20: syntax error, unexpected '}', expecting keyword_end
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:26: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/media.rb:15:in `'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/media_contents_controller.rb:4:in `index'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c04ef535ef6cdbd3/variables" for 127.0.0.1 at 2015-06-04 21:29:04 -0400
+
+
+Started POST "/__better_errors/c04ef535ef6cdbd3/variables" for 127.0.0.1 at 2015-06-04 21:29:24 -0400
+
+
+Started POST "/__better_errors/c04ef535ef6cdbd3/variables" for 127.0.0.1 at 2015-06-04 21:29:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:29:26 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 282ms (Views: 269.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:29:27 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:29:30 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac05b180b0 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-882syj>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:29:30.248094"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:29:30.248094"]]
+  [1m[35m (95.8ms)[0m  COMMIT
+Completed 200 OK in 183ms (Views: 0.9ms | ActiveRecord: 96.5ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:29:39 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"39.141552777777775", "lng"=>"77.19354166666668", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac05a532b0 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-rhg63e>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-05 01:29:39.557768"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:29:39.557768"]]
+  [1m[36m (38.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 132ms (Views: 0.8ms | ActiveRecord: 39.6ms)
+  [1m[35mMedia Load (21.7ms)[0m  SELECT  "media".* FROM "media"   ORDER BY "media"."id" DESC LIMIT 1
+  [1m[36mMedia Load (0.8ms)[0m  [1mSELECT  "media".* FROM "media"   ORDER BY "media"."id" DESC LIMIT 1[0m
+  [1m[35mMedia Load (1.3ms)[0m  SELECT  "media".* FROM "media"   ORDER BY "media"."id" DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:32:27 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 204ms (Views: 181.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:29 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:29 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:30 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:32:32 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:32:36 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac024e79c8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-18lz8qh>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:32:37.011493"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:32:37.011493"]]
+  [1m[35m (69.2ms)[0m  COMMIT
+Completed 200 OK in 165ms (Views: 1.1ms | ActiveRecord: 70.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.5ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 255ms (Views: 234.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:50 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:33:51 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:33:53 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac026dcf30 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-1anqmz4>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token
+Unpermitted parameters: utf8, authenticity_token
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `file' for #<ActionController::Parameters:0x007fac01bb2d08>:
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:34:00 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"39.141552777777775", "lng"=>"77.19354166666668", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac02555c48 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-6djn5x>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token
+Unpermitted parameters: utf8, authenticity_token
+Completed 500 Internal Server Error in 145ms
+
+NoMethodError - undefined method `file' for #<ActionController::Parameters:0x007fac0252cf50>:
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:34:05 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.4ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:06 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:34:09 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01f99638 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-19blkup>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token
+Unpermitted parameters: utf8, authenticity_token
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `file' for #<ActionController::Parameters:0x007fac01f83068>:
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:34:19 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.5ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 135ms (Views: 101.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:34:20 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:34:22 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac02768d78 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-b6abgp>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-05 01:34:22.148932"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:34:22.148932"]]
+  [1m[36m (88.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 185ms (Views: 1.3ms | ActiveRecord: 88.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:36:04 -0400
+Processing by MediaContentsController#index as HTML
+Completed 500 Internal Server Error in 16ms
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting '}'
+          description: placemark.description,
+                     ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:16: syntax error, unexpected tLABEL, expecting '='
+          image_url: media.file_name,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:17: syntax error, unexpected tLABEL, expecting '='
+          image_alt: placemark.image_alt,
+                    ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:18: syntax error, unexpected tLABEL, expecting '='
+          link: placemark.link,
+               ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:19: syntax error, unexpected =>, expecting :: or '[' or '.'
+          :'marker-color' => '#f00'
+                            ^
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:20: syntax error, unexpected '}', expecting keyword_end
+/Users/nbumbarger/ga/projects/rails/img2map/app/models/media.rb:26: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/media.rb:15:in `'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/media_contents_controller.rb:4:in `index'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/e97ef95a0c53b7b6/variables" for 127.0.0.1 at 2015-06-04 21:36:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 235ms (Views: 203.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:36:47 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:36:52 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac0581b7b8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-duohyk>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError - undefined method `filename' for {"lat"=>"", "lng"=>""}:ActionController::Parameters:
+  app/controllers/media_contents_controller.rb:8:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:37:13 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 233ms (Views: 198.1ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:15 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:16 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:37:17 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:37:35 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac058b1218 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-65r2ii>, @original_filename="image8.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.JPG\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:37:35.974886"], ["file_name", "image8.JPG"], ["updated_at", "2015-06-05 01:37:35.974886"]]
+  [1m[35m (244.5ms)[0m  COMMIT
+Completed 200 OK in 1215ms (Views: 1.1ms | ActiveRecord: 245.1ms)
+
+
+Started DELETE "/delete_media" for 127.0.0.1 at 2015-06-04 21:39:20 -0400
+Processing by MediaContentsController#delete_media as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "commit"=>"Delete", "media_contents"=>["155", "156", "157", "158", "159", "160", "161", "162", "163", "164"]}
+  [1m[36mMedia Load (1.4ms)[0m  [1mSELECT "media".* FROM "media"  WHERE "media"."id" IN (155, 156, 157, 158, 159, 160, 161, 162, 163, 164)[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (23.6ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 155]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 156]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 157]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 158]]
+  [1m[36m (22.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 159]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 160]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 161]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 162]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 163]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 164]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 254ms (ActiveRecord: 60.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:39:20 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 194ms (Views: 191.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:21 -0400
+
+
+Started DELETE "/delete_media" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+Processing by MediaContentsController#delete_media as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "commit"=>"Delete", "media_contents"=>["165"]}
+  [1m[35mMedia Load (0.6ms)[0m  SELECT "media".* FROM "media"  WHERE "media"."id" IN (165)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 165]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:39:31 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:39:37 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01d90d50 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-kdyxyg>, @original_filename="image1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image1.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:39:37.338731"], ["file_name", "image1.jpg"], ["updated_at", "2015-06-05 01:39:37.338731"]]
+  [1m[35m (27.0ms)[0m  COMMIT
+Completed 200 OK in 171ms (Views: 1.9ms | ActiveRecord: 27.7ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:39:51 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"38.877183333333335", "lng"=>"77.01776111111111", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac0260f990 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-195i1il>, @original_filename="image2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image2.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-05 01:39:51.964927"], ["file_name", "image2.jpg"], ["updated_at", "2015-06-05 01:39:51.964927"]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 99ms (Views: 86.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:41 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:40:44 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01ed1908 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-1vv42e6>, @original_filename="image4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image4.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Unpermitted parameters: utf8, authenticity_token, file
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError - undefined method `file_name' for #<ActionDispatch::Http::UploadedFile:0x007fac01ed1908>:
+  app/controllers/media_contents_controller.rb:9:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/nbumbarger/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.9ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 97ms (Views: 93.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:40:50 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 105ms (Views: 94.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 21:44:16 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 21:44:19 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac05c93228 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-12o0nc7>, @original_filename="image7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image7.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (2.5ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 01:44:19.846982"], ["file_name", "image7.jpg"], ["updated_at", "2015-06-05 01:44:19.846982"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+Completed 200 OK in 73ms (Views: 1.6ms | ActiveRecord: 9.5ms)
+  [1m[36mMedia Load (24.5ms)[0m  [1mSELECT  "media".* FROM "media"   ORDER BY "media"."id" DESC LIMIT 1[0m
+  [1m[35mMedia Load (0.6ms)[0m  SELECT "media".* FROM "media"
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.4ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 220ms (Views: 200.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:45 -0400
+
+
+Started DELETE "/delete_media" for 127.0.0.1 at 2015-06-04 22:21:51 -0400
+Processing by MediaContentsController#delete_media as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "commit"=>"Delete", "media_contents"=>["168", "166", "167"]}
+  [1m[36mMedia Load (0.9ms)[0m  [1mSELECT "media".* FROM "media"  WHERE "media"."id" IN (168, 166, 167)[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 168]]
+  [1m[35m (38.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "media" WHERE "media"."id" = $1  [["id", 166]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "media" WHERE "media"."id" = $1[0m  [["id", 167]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms (ActiveRecord: 42.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "media"[0m
+  [1m[35mMedia Load (0.3ms)[0m  SELECT "media".* FROM "media"
+  Rendered media_contents/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 22:21:52 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:21:56 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac01b99d80 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-1of6768>, @original_filename="image3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image3.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "media" ("created_at", "file_name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-06-05 02:21:56.519945"], ["file_name", "image3.jpg"], ["updated_at", "2015-06-05 02:21:56.519945"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 73ms (Views: 1.0ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:22:06 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"38.89881388888889", "lng"=>"77.00621111111111", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fac038b7430 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-33119-17tgmw6>, @original_filename="image3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image3.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (12.3ms)[0m  [1mINSERT INTO "media" ("created_at", "file_name", "lat", "lng", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-06-05 02:22:06.625760"], ["file_name", "image3.jpg"], ["lat", "38.89881388888889"], ["lng", "38.89881388888889"], ["updated_at", "2015-06-05 02:22:06.625760"]]
+  [1m[35m (3.9ms)[0m  COMMIT
+Completed 200 OK in 71ms (Views: 0.9ms | ActiveRecord: 17.2ms)
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[36m (57.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (18.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMedia (20150602216523)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE "media" ("id" serial primary key, "file" character varying(255), "lat" decimal, "lng" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150602216523"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 22:30:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.4ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 259ms (Views: 223.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 22:30:51 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:30:55 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc212951100 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-42117-189zsax>, @original_filename="image3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image3.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "media" ("created_at", "file", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 02:30:55.721545"], ["file", "image3.jpg"], ["updated_at", "2015-06-05 02:30:55.721545"]]
+  [1m[35m (3.9ms)[0m  COMMIT
+Completed 200 OK in 57ms (Views: 1.2ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:31:20 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"38.89881388888889", "lng"=>"77.00621111111111", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc214252410 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-42117-18h3q3e>, @original_filename="image3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image3.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "media" ("created_at", "file", "lat", "lng", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-06-05 02:31:20.879212"], ["file", "image3.jpg"], ["lat", "38.89881388888889"], ["lng", "77.00621111111111"], ["updated_at", "2015-06-05 02:31:20.879212"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 26ms (Views: 1.1ms | ActiveRecord: 6.5ms)
+  [1m[36mMedia Load (0.9ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.6ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+Processing by MediaContentsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "media"
+  [1m[36mMedia Load (0.3ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media_contents/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 126ms (Views: 99.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/dropzone.css?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/exif.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/dropzone.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/mapview.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/media_contents.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 22:37:54 -0400
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:37:57 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"", "lng"=>"", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc210f99050 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-42117-1pd6jm8>, @original_filename="image6.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image6.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "media" ("created_at", "file", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-06-05 02:37:57.751428"], ["file", "image6.jpg"], ["updated_at", "2015-06-05 02:37:57.751428"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+Completed 200 OK in 29ms (Views: 1.6ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/media_contents" for 127.0.0.1 at 2015-06-04 22:38:02 -0400
+Processing by MediaContentsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQdXw7u4ZrObDOZcdNdu8Hs5GMy8BsGiyQDlxmwpw7s=", "lat"=>"39.039294444444444", "lng"=>"77.09397777777777", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc2115512b8 @tempfile=#<Tempfile:/var/folders/k7/1_4kml353ts7_01whk_h756r0000gq/T/RackMultipart20150604-42117-uwg7ah>, @original_filename="image8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"image8.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "media" ("created_at", "file", "lat", "lng", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-06-05 02:38:02.893460"], ["file", "image8.jpg"], ["lat", "39.039294444444444"], ["lng", "77.09397777777777"], ["updated_at", "2015-06-05 02:38:02.893460"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 8.8ms)
+  [1m[35mMedia Load (0.8ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.9ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mMedia Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mMedia Load (0.6ms)[0m  SELECT "media".* FROM "media"

@@ -1,8 +1,7 @@
 class CreateMedia < ActiveRecord::Migration
   def change
     create_table :media do |t|
-      t.string :file_name
-      t.string :name
+      t.string :file
       t.decimal :lat
       t.decimal :lng
       t.timestamps null: false

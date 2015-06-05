@@ -5,8 +5,10 @@ class MediaContentsController < ApplicationController
   end
 
  def create
-    puts params
-    @media = Media.new(file_name: params[:file])
+    @media = Media.new(
+            file: params[:file],
+            lat: params[:lat],
+            lng: params[:lng])
     if @media.save!
       respond_to do |format|
         format.json{ render :json => @media }
@@ -17,6 +19,10 @@ class MediaContentsController < ApplicationController
   def delete_media
     Media.where(id: params[:media_contents]).destroy_all
     redirect_to root_url
+  end
+
+  def media_params
+    params.permit(:file, :lat, :lng, "coords")
   end
 
 end

@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 20150602216523) do
   enable_extension "plpgsql"
 
   create_table "media", force: true do |t|
-    t.string   "file_name"
-    t.string   "name"
+    t.string   "file"
     t.decimal  "lat"
     t.decimal  "lng"
     t.datetime "created_at", null: false

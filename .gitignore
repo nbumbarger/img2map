@@ -1,0 +1,25 @@
+# MAC OS X Ignore: ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon
+
+
+
+# Rails Ignore: ---
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+/.bundle
+/vendor/bundle
+.rvmrc
+.powenv

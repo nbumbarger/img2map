@@ -17,8 +17,8 @@ $(function() {
   });
 
   mediaDropzone.on("success", function(file, responseText) {
-    alert("This event should fire last")
-    appendImage(responseText.file_name.url, responseText.id);
+    alert("This event should fires last")
+    appendImage(responseText.file.url, responseText.id);
     setTimeout(function(){
       $(file.previewElement).fadeOut(2000)
     },1000);
