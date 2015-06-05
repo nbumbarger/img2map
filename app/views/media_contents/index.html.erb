@@ -1,5 +1,4 @@
 
-
 <div class='map-container'>
   <div id='map'>
     <pre id='coordinates' class='ui-coordinates'></pre>
@@ -32,11 +31,9 @@
 <% end %>
 </div>
 </div>
-
-
 </div>
 
 <script>
 
-  initMapView('<%= Rails.application.secrets.mapbox_token %>', '<%= root_path %>');
+  initMain('<%= Rails.application.secrets.mapbox_token %>', '<%= root_path %>');
 </script>
