@@ -1,23 +1,11 @@
-<div class='mapview'>
+<div class='map-container'>
   <div id='map'>
     <pre id='coordinates' class='ui-coordinates'></pre>
   </div>
     <div class='caption'>
-      <b>Required:</b> Drag <span class='icon-location'></span> to set location. Zoom to start location using <span class='icon-search'></span>
+      <span><b>Drag and drop images into the uploader below to begin mapping</span>
     </div>
   </div>
-
-<div class="controls">
-<div id="media-contents">
-<h1>Testing Area</h1>
-<%= form_tag '/delete_media', method: :delete do %>
-  <%= submit_tag "Delete", id: "delete", disabled: @media_contents.empty? %>
-    <% @media_contents.each do |media| %>
-      <%= image_tag media.file.url %>
-      <%= check_box_tag "media_contents[]", media.id %>
-  <% end %>
-<% end %>
-</div>
 
 <%= form_tag '/media_contents', method: :post, class: "dropzone", id: "media-dropzone" do %>
   <%= hidden_field_tag :lat %>
@@ -27,8 +15,22 @@
   </div>
 <% end %>
 
+<div class="controls">
+<div id="media-contents">
+<h1>Uploaded Imagery</h1>
+<%= form_tag '/delete_media', method: :delete do %>
+  <%= submit_tag "Delete", id: "delete", disabled: @media_contents.empty? %>
+    <% @media_contents.each do |media| %>
+      <%= image_tag media.file.url %>
+      <%= check_box_tag "media_contents[]", media.id %>
+  <% end %>
+<% end %>
+</div>
+
+
 </div>
 
 <script>
-  initMapView('<%= Rails.application.secrets.mapbox_token %>');
+
+  initMapView('<%= Rails.application.secrets.mapbox_token %>', '<%= root_path %>');
 </script>

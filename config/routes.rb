@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   root 'media_contents#index'
 
-  resources :media_contents, only: [:create]
+  resources :media_contents, only: [:create, :json]
+  get 'media_contents/json'
   delete 'delete_media', to: "media_contents#delete_media"
   
 end

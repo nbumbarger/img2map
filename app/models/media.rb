@@ -6,11 +6,12 @@ class Media < ActiveRecord::Base
     self.all.each do |media|
     	@name = media.file.model["file"]
     	@img_url = media.file.url
+      @lat, @lng = demoKludge(media.lat, media.lng)
       @geojson << {
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [media.lng, media.lat]
+          coordinates: [@lng, @lat]
         },
         properties: {
           name: @name,
@@ -27,6 +28,14 @@ class Media < ActiveRecord::Base
     content = String.new
     content += '<h2>'+name+'</h2>'
     content +='<img src="'+img_url+'" alt="'+name+'" />';
+  end
+
+  def self.demoKludge(lat, lng)
+    if lat.nil? || lng.nil?
+      lat = 38.87531944
+      lng = 77.05006111
+    end
+    return [lat, -lng]
   end
 
 end

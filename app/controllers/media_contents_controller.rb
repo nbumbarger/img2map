@@ -2,13 +2,18 @@ class MediaContentsController < ApplicationController
  
   def index
     @media_contents = Media.all
+    respond_to do |format|
+      format.html {render :index}
+      format.json {render json: @media_contents.geoJSON}
+    end
+  end
+
+  def json
+    
   end
 
  def create
-    @media = Media.new(
-            file: params[:file],
-            lat: params[:lat],
-            lng: params[:lng])
+    @media = Media.new(file: params[:file], lat: params[:lat], lng: params[:lng])
     if @media.save!
       respond_to do |format|
         format.json{ render :json => @media }

@@ -1,27 +1,25 @@
 $(function() {
   var mediaDropzone;
-    mediaDropzone = new Dropzone("#media-dropzone");
-    mediaDropzone.on("addedfile", function(file) {
-      getCoords(file, function(coords) {
-      $('#lat').val(coords.lat);
-      $('#lng').val(coords.lng)
-      alert("added to hidden field: "+coords.lat+" "+coords.lng )
-      })
+  mediaDropzone = new Dropzone("#media-dropzone");
+  mediaDropzone.on("addedfile", function(file) {
+    getCoords(file, function(coords) {
+    $('#lat').val(coords.lat);
+    $('#lng').val(coords.lng)
+    // alert("added to hidden field: "+coords.lat+" "+coords.lng )
+    })
   });
-
   mediaDropzone.on("sending", function(file, xhr, formData) {
-      getCoords(file, function(coords) {
-        alert("attempting to append to formData: "+coords.lat+" "+coords.lng )
-        formData.append("coords", coords);
-      })
+    getCoords(file, function(coords) {
+    // alert("attempting to append to formData: "+coords.lat+" "+coords.lng )
+    formData.append("coords", coords);
+    })
   });
-
   mediaDropzone.on("success", function(file, responseText) {
-    alert("This event should fires last")
-    appendImage(responseText.file.url, responseText.id);
-    setTimeout(function(){
-      $(file.previewElement).fadeOut(2000)
-    },1000);
+  // alert("This event should fire last")
+  appendImage(responseText.file.url, responseText.id);
+  setTimeout(function(){
+    $(file.previewElement).fadeOut(2000)
+    }, 1000);
   });
 });
 

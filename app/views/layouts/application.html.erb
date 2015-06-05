@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang='en'>
 <head>
-  <title>Img2Map Uploader</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset='utf-8'>
+  <title>img2map</title>
+  <meta name='description' content='img2map: Quickly map geocoded images '>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+    <h1>
+      img2map
+    </h1>
+  </header>
+  <section>
+  <%= yield %> 
+  </section>
+  </footer>
 </body>
 </html>
