@@ -1,5 +1,4 @@
-/*Layout styles*/
-
+/*layout styles*/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ html {
 
 header, section, footer {
   width: 80%;
-  min-width: 67.5rem;
+  min-width: 40rem;
   margin: 1rem auto 0 auto;
   overflow: auto
 }
@@ -23,13 +22,12 @@ section {
 }
 
 .logo {
-  width:100%;
+  width: 100%;
   height: 6rem;
   background: url("logo.png") center/424px 75px no-repeat;
-
 }
 
-/*Map container styles*/
+/*map container styles*/
 .map-container {
   width: 98%;
   float: left;
@@ -42,6 +40,19 @@ section {
 .map-container #map {
   height: 25rem;
   border-radius: 5px 5px 0 0;
+}
+
+.map-container .caption {
+  width: 100%;
+  padding: .5rem 0;
+  background: rgb(170, 232, 255);
+  color: rgb(0, 6, 73);
+  border-radius: 0 0 5px 5px;
+  text-align: center; 
+}
+
+.map-container .caption b {
+  font-weight: 600;
 }
 
 .map-container pre.ui-coordinates {
@@ -58,19 +69,6 @@ section {
   z-index: 999;
 }
 
-.map-container .caption {
-  width: 100%;
-  padding: .5rem 0;
-  background: rgb(170, 232, 255);
-  color: rgb(0, 6, 73);
-  border-radius: 0 0 5px 5px;
-  text-align: center; 
-}
-
-.map-container .caption b {
-  font-weight: bold;
-}
-
 /*dropzone styles*/
 #media-dropzone {
   width: 98%;
@@ -81,15 +79,14 @@ section {
   background: url("cloud.png") center no-repeat;
   border: 2px solid rgb( 100, 100, 255);
   border-radius: 5px;
-  box-shadow: 0 0 7px 2px rgb(160, 160, 160);
   text-align:center;
   box-shadow: inset 0 0 100px 1px rgba(0,0,0,0.5), 0 0 7px 2px rgb(160, 160, 160);
 }
 
-.saved-images{
-  float: left;
+.saved-images {
   width: 98%;
-  margin:1rem;
+  float: left;
+  margin: 1rem;
   border: 1px solid rgb(150, 150, 150);
   border-radius: 5px;
   box-shadow: 0 0 7px 2px rgb(160, 160, 160);
@@ -100,55 +97,51 @@ section {
   padding: .5rem 0;
   background: rgb(170, 232, 255);
   color: rgb(0, 6, 73);
+  text-align: center; 
   border-bottom: 1px solid rgb(150, 150, 150);
   border-radius: 5px 5px 0 0;
-  text-align: center; 
 }
 
-#media-contents img {
-  margin-left:1.25rem;
+.saved-images img {
   width: 75px;
   height: 56.25px;
-  padding-bottom:1rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1rem;
 }
 
 .dz-preview, .dz-file-preview {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
 }
 
 .dz-default.dz-message {
-  letter-spacing: .03rem;
-  font-weight: 600;
   padding-top: 6.75rem;
   color: rgb(100, 100, 100);
+  font-weight: 600;
+  letter-spacing: .03rem;
 }
 
-
-/*button styles*/
-
-
-
+/*form styles*/
 .checkbox {
-  position:relative;
-  clear:left;
-  margin-bottom:.5rem;
+  position: relative;
+  clear: left;
+  margin-bottom: .5rem;
 }
+
 input[type="submit"] {
-  width:97%;
-  margin:1rem;
+  width: 97%;
+  margin: 1rem;
   padding: .75rem;
-  font-size: 1rem;
   border: 1px solid rgb(178, 178, 178);
   border-radius: 5px;
   color: rgb(85, 85, 85);
   background: rgb(242, 242, 242);
+  font-size: 1rem;
   text-align: center;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 input[type="submit"]:focus {
@@ -160,4 +153,3 @@ input[type="submit"]:hover {
   background: rgb(216, 216, 216);
   border-color: rgb(90, 90, 90);
 }
-

@@ -1,11 +1,11 @@
 function initMain(mapboxToken, geoJSON) {
 
+  // Start uploader section --------------------
   $(function() {
-    var mediaDropzone;
     // Initialize upload dropzone
-    mediaDropzone = new Dropzone("#media-dropzone");
+    var imageDropzone = new Dropzone("#media-dropzone");
     // When file is first dropped...
-    mediaDropzone.on("addedfile", function(file) {
+    imageDropzone.on("addedfile", function(file) {
       // ...extract coordinates from image and convert to decimal
       getCoords(file, function(coords) {
       // ... Store converted lat/lng in hidden fields
@@ -14,9 +14,9 @@ function initMain(mapboxToken, geoJSON) {
       })
     });
     // When upload succeeds...
-    mediaDropzone.on("success", function(file, responseText) {
+    imageDropzone.on("success", function(file, responseText) {
       // ...append image to image manager
-      appendImage(responseText.file.url, responseText.id);
+      appendImage(file.name, responseText.file.url, responseText.id);
       setTimeout(function(){
         // ...run the map refresh routine 
         loadFeatures();
@@ -27,7 +27,7 @@ function initMain(mapboxToken, geoJSON) {
   });
 
   // Convert a coordinate in degrees, minutes seconds format to decimal
-  // OOPS! Need to add conversion for hemisphere
+  // todo: Need to add conversion for hemisphere
   function exifCoordToDec(exifCoord) {
     var degreeDec = exifCoord[0].numerator
     var minuteDec = exifCoord[1].numerator / (60 * exifCoord[1].denominator)
@@ -46,13 +46,19 @@ function initMain(mapboxToken, geoJSON) {
     });
   };
 
-  // Append uploaded images to image manager 
-  var appendImage = function(imageUrl, mediaId) {
-    var imageMarkup = '<img src="' + imageUrl + '"/>' +
-      '<input id="media_contents_" name="media_contents[]" value="' + mediaId +'" type="checkbox" class="checkbox">'
+  // Append uploaded images to image manager
+  var appendImage = function(imageName, imageUrl, imageId) {
+    // Little function to cap and remove ext from img name
+    function formatImgAlt(imageName) {
+      var imageName = imageName.slice(0, -4);
+      return imageName.charAt(0).toUpperCase() + imageName.slice(1);
+    }
+    var imageMarkup = '<img alt="' + formatImgAlt(imageName) + '" src="' +imageUrl + '"/>' + '<input checked="checked" class="checkbox" id="images_" name="images[]" type="checkbox" value="' + imageId + '"/>'
     $(imageMarkup).hide().appendTo(".saved-images").fadeIn(1500)
   };
-  
+  // End uploader section ----------------------
+
+  // Start map section -------------------------
   L.mapbox.accessToken = mapboxToken;
   // Initialize map frame with default zoom behavior disabled
   var map = L.mapbox.map('map', 'mapbox.streets', {doubleClickZoom: false})
@@ -91,7 +97,9 @@ function initMain(mapboxToken, geoJSON) {
           closeButton: false
     });
   };
-}
+  // End map section ---------------------------
+
+};
 
 // getCoords (HTTP Request version). I may need this later.
 // function getCoords(imageUrl) {

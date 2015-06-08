@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150602216523) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "media", force: true do |t|
+  create_table "images", force: true do |t|
     t.string   "file"
     t.decimal  "lat"
     t.decimal  "lng"

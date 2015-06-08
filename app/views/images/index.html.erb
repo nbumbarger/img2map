@@ -1,0 +1,33 @@
+<div class='map-container'>
+  <div id='map'>
+    <pre id='coordinates' class='ui-coordinates'></pre>
+  </div>
+  <div class='caption'>
+    <span><b>Drag and drop images into the uploader below to begin mapping</b></span>
+  </div>
+</div>
+
+<%= form_tag '/images', method: :post, class: "dropzone", id: "media-dropzone" do %>
+  <%= hidden_field_tag :lat %>
+  <%= hidden_field_tag :lng %>
+  <div class="fallback">
+    <%= file_field_tag "images", multiple: true%>
+  </div>
+<% end %>
+
+<div class="saved-images">
+<div class='caption'>
+  <span><b>Manage images using the form below</b></span>
+</div>
+<%= form_tag '/delete_images', method: :delete do %>
+<%= submit_tag "Delete Selected", id: "delete", disabled: @images.empty? %>
+    <% @images.each do |image| %>
+      <%= image_tag image.file.url %>
+      <%= check_box_tag "images[]", image.id, true, class: "checkbox" %>
+  <% end %>
+<% end %>
+</div>
+
+<script>
+  initMain('<%= Rails.application.secrets.mapbox_token %>', '<%= root_path %>');
+</script>
