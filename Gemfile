@@ -8,12 +8,12 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'normalize-rails'
-gem 'rails_12factor', group: :production
 gem 'carrierwave'
 gem 'autoprefixer-rails'
-
+gem 'cloudinary' 
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rails_12factor', group: :production
 group :development do
   gem 'spring'
   gem 'pry-rails'

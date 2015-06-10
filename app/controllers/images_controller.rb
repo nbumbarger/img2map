@@ -8,11 +8,6 @@ class ImagesController < ApplicationController
     end
   end
 
-  # Not surrently using this,
-  # but might want to serve geoJSON from something other than the base_url
-  def json
-  end
-
   def create
     @image = Image.new(file: params[:file], lat: params[:lat], lng: params[:lng])
     if @image.save!
@@ -22,7 +17,7 @@ class ImagesController < ApplicationController
     end
   end
 
-  # I would rather use an AJAX delete method
+  # Plan to change to an AJAX delete method
   def delete_images
     Image.where(id: params[:images]).destroy_all
     redirect_to root_url

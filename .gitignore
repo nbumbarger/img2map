@@ -24,3 +24,8 @@ pickle-email-*.html
 /vendor/bundle
 .rvmrc
 .powenv
+
+
+
+# Ignore application configuration
+/config/application.yml

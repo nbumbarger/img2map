@@ -3,15 +3,15 @@ function initMain(mapboxToken, geoJSON) {
   // Start uploader section --------------------
   $(function() {
     // Initialize upload dropzone
-    var imageDropzone = new Dropzone("#media-dropzone");
+    var imageDropzone = new Dropzone("#image-dropzone");
     // When file is first dropped...
     imageDropzone.on("addedfile", function(file) {
       // ...extract coordinates from image and convert to decimal
       getCoords(file, function(coords) {
       // ... Store converted lat/lng in hidden fields
       $('#lat').val(coords.lat);
-      $('#lng').val(coords.lng)
-      })
+      $('#lng').val(coords.lng);
+      });
     });
     // When upload succeeds...
     imageDropzone.on("success", function(file, responseText) {
@@ -21,13 +21,12 @@ function initMain(mapboxToken, geoJSON) {
         // ...run the map refresh routine 
         loadFeatures();
         // ..fade out upload status/preview thumbnails
-        $(file.previewElement).fadeOut(2000)
-        }, 1000);
+        $(file.previewElement).fadeOut(2000);
+      }, 1000);
     });
   });
 
   // Convert a coordinate in degrees, minutes seconds format to decimal
-  // todo: Need to add conversion for hemisphere
   function exifCoordToDec(exifCoord) {
     var degreeDec = exifCoord[0].numerator
     var minuteDec = exifCoord[1].numerator / (60 * exifCoord[1].denominator)
@@ -40,9 +39,9 @@ function initMain(mapboxToken, geoJSON) {
     EXIF.getData(image, function() {
       var lng = EXIF.getTag(this, 'GPSLongitude');
       var lat = EXIF.getTag(this, 'GPSLatitude');
-      var lngDec = exifCoordToDec(lng)
-      var latDec = exifCoordToDec(lat)
-      callback({lat:latDec, lng:lngDec})
+      var lngDec = exifCoordToDec(lng);
+      var latDec = exifCoordToDec(lat);
+      callback({lat:latDec, lng:lngDec});
     });
   };
 
@@ -52,9 +51,10 @@ function initMain(mapboxToken, geoJSON) {
     function formatImgAlt(imageName) {
       var imageName = imageName.slice(0, -4);
       return imageName.charAt(0).toUpperCase() + imageName.slice(1);
-    }
-    var imageMarkup = '<img alt="' + formatImgAlt(imageName) + '" src="' +imageUrl + '"/>' + '<input checked="checked" class="checkbox" id="images_" name="images[]" type="checkbox" value="' + imageId + '"/>'
-    $(imageMarkup).hide().appendTo(".saved-images").fadeIn(1500)
+    };
+    var imageMarkup = '<img alt="' + formatImgAlt(imageName) + '" src="' + imageUrl + '"/>' +'<input checked="checked" class="checkbox" id="images_" name="images[]" type="checkbox" value="' + imageId + '"/>';
+    $(imageMarkup).hide().appendTo(".saved-images").fadeIn(1500);
+    $("#delete").removeAttr('disabled');
   };
   // End uploader section ----------------------
 
@@ -64,16 +64,16 @@ function initMain(mapboxToken, geoJSON) {
   var map = L.mapbox.map('map', 'mapbox.streets', {doubleClickZoom: false})
     // Add custom zoom behavior (pan to center of double-click event)
     .on('dblclick', function(e) {
-      map.setView(e.latlng, map.getZoom() + 1)
+      map.setView(e.latlng, map.getZoom() + 1);
     });
   // Define feature layer
-  var featureLayer = L.mapbox.featureLayer()
+  var featureLayer = L.mapbox.featureLayer();
   // Add HTML popups to each feature
   featureLayer.on('layeradd', function(e){
-    addPopups(e)
+    addPopups(e);
   })
   // Add empty feature layer to map frame
-  .addTo(map)
+  .addTo(map);
 
   // Get latest GeoJSON
   function loadFeatures() {
