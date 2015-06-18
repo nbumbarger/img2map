@@ -12,9 +12,9 @@ html {
 
 header, section, footer {
   width: 80%;
-  min-width: 40rem;
+  min-width: 35rem;
   margin: 1rem auto 0 auto;
-  overflow: auto
+  overflow: none
 }
 
 section {
