@@ -76,17 +76,14 @@ section {
 }
 
 .map-container .leaflet-popup-content-wrapper h2 {
+  width: 285px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0 0 7px 2px;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1px;
-}
-
-.map-view .leaflet-popup-content-wrapper .truncate{
-  width: 308px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .map-container .leaflet-popup-content-wrapper img {
