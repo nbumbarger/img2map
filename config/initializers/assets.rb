@@ -4,5 +4,6 @@
 Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
-# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
+image_exts = ['*.png', '*.jpg', '*.jpeg', '*.gif']
+html5_shiv = ['html5shiv.js', 'html5shiv-printshiv.js']
+Rails.application.config.assets.precompile +=  image_exts + html5_shiv

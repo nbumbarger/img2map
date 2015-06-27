@@ -3,4 +3,5 @@
 //= require turbolinks
 //= require exif
 //= require dropzone
-//= require_tree .
+//= require mapbox
+//= require main

@@ -1,6 +1,6 @@
 /*
-*= require_tree .
-*= require_self
-*= require_normalize
+*= require normalize
 *= require dropzone
+*= require mapbox
+*= require styles
 */
