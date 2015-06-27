@@ -24,7 +24,7 @@ class Image < ActiveRecord::Base
   end
 
   def self.popupHTML(name, img_url)
-    content = '<h2 class="truncate">'+name+'</h2><img src="'+img_url+'" alt="'+name+'" />'
+    content = '<h2>'+name+'</h2><img src="'+img_url+'" alt="'+name+'" />'
   end
 
 end
