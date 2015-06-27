@@ -129,6 +129,10 @@ section {
   padding-bottom: 1rem;
 }
 
+.dz-preview {
+  border-radius: 20px;
+}
+
 .dz-preview, .dz-file-preview {
   margin: 0;
   padding: 0;
