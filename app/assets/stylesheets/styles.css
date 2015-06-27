@@ -82,6 +82,13 @@ section {
   letter-spacing: 1px;
 }
 
+.map-view .leaflet-popup-content-wrapper .truncate{
+  width: 308px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .map-container .leaflet-popup-content-wrapper img {
   width: 288px;
   height: 178px;
