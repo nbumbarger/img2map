@@ -9,6 +9,7 @@ Icon
 
 # Rails Ignore: ---
 log/
+tmp/
 *.rbc
 capybara-*.html
 .rspec
